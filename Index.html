@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <link href="indexCSS.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta charset="UTF-8">
+  <script src="../../../AppData/Local/Temp/Rar$DR02.484/index_js.js"></script>
+  <script src="../../../AppData/Local/Temp/Rar$DR04.468/index_js.js"></script>
+
+
+</head>
+<body>
+<section class="Home"></section>
+<nav>
+  <ul>
+    <li><a href="#" class="active">Home</a> </li>
+    <li><a href="#PersonalInfo">Personal Info</a> </li>
+    <li><a href="#skill">Skills</a> </li>
+    <li><a href="#Education">Education</a> </li>
+    <li><a href="#WorkExperience">Work Experience</a></li>
+    <li><a href="#Recommendations">Recommendations</a> </li>
+  </ul>
+</nav>
+
+
+<section class="PersonalInfo">
+  <div id="PersonalInfo">
+    <h1 class="PersonHead">Personal Info:</h1>
+    <img id="myImg" class ="PersonIcon" src="https://i.pinimg.com/originals/4f/a1/41/4fa141173a1b04470bb2f850bc5da13b.png" alt="Batman" onclick="Model()">
+
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+    <div class="PersonText">
+      <p>Batman</p>
+      <p>phone: <a href="tel:12345678">12345678</a> </p>
+      <p>email:<a href = "mailto:">batman@gmail.com </a> </p>
+      <p>address:</p>
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13606.18512773843!2d34.5945456!3d31.5091529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2f92addc3834b6c!2z15TXnteb15zXnNeUINeU15DXp9eT157XmdeqINeh16TXmdeo!5e0!3m2!1siw!2sil!4v1618670946631!5m2!1siw!2sil"
+                 width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+  <div class="w3-content" style="max-width:600px">
+    <h4 class="w3-center"><b>Contact Us</b></h4>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Phone</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Free Taxt</label>
+        <form name="myform">
+                    <textarea name="limitedtextarea" onKeyDown="limitText(this.form.limitedtextarea,this.form.countdown,200);"
+                              onKeyUp="limitText(this.form.limitedtextarea,this.form.countdown,200);">
+                    </textarea><br>
+          <font size="1">(Maximum characters: 200)<br>
+            You have <input readonly type="text" name="countdown" size="3" value="200"> characters left.</font>
+        </form>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+    </form>
+  </div>
+</div>
+
+
+
+<section class="Skills">
+  <div id="skill">
+    <h2 class="skillHead">Skills:</h2>
+  </div>
+
+  <div class="skillBar">
+    <p class="skillText">java:</p>
+    <div id="myProgress1">
+      <div id="myBar1"></div>
+    </div>
+    <p class="skillText">C++:</p>
+    <div id="myProgress2">
+      <div id="myBar2"> </div>
+    </div>
+    <p class="skillText">html:</p>
+    <div id="myProgress3">
+      <div id="myBar3"> </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="Education">
+  <div id="Education">
+    <h3 class="EducationHead">Education:</h3>
+  </div>
+  <div class="Education1">
+    <img src="https://upload.wikimedia.org/wikipedia/he/thumb/4/46/SapirCollege.svg/1200px-SapirCollege.svg.png"
+         class="EducationIcon">
+    <p class="EducationText">Sapir College</p>
+    <p class="EducationText">years: 2015-2018</p>
+    <p class="EducationText">Sderot</p>
+    <p class="EducationText">B.sc computer sciences</p>
+    <div class="EducationMap">
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.546282612508!2d34.59673428484975!3d31.509152881373247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502814a96e693ed%3A0xd2f92addc3834b6c!2z15TXnteb15zXnNeUINeU15DXp9eT157XmdeqINeh16TXmdeo!5e0!3m2!1siw!2sil!4v1618682417411!5m2!1siw!2sil"
+                 width="350" height="250"  style="border:0;"  allowfullscreen="" loading="lazy"></iframe></p>
+    </div>
+  </div>
+  <div class="Education2">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/%D7%9C%D7%95%D7%92%D7%95_%D7%90%D7%95%D7%A0%D7%99%D7%91%D7%A8%D7%A1%D7%99%D7%98%D7%AA_%D7%91%D7%9F_%D7%92%D7%95%D7%A8%D7%99%D7%95%D7%9F.PNG"
+         class="EducationIcon">
+    <p class="EducationText">Ben Gurion University</p>
+    <p class="EducationText">years: 2023-2030</p>
+    <p class="EducationText">Beer Sheva</p>
+    <p class="EducationText">doctorate</p>
+    <div class="EducationMap">
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d873088.4072636393!2d35.361763734375!3d31.262218000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502665f2e01c71b%3A0x15ca4db0c140b893!2z15DXldeg15nXkdeo16HXmdeY16og15HXny3XkteV16jXmdeV158g15HXoNeS15E!5e0!3m2!1siw!2sil!4v1618683098388!5m2!1siw!2sil"
+                 width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="WorkExperience">
+  <div id="WorkExperience">
+    <h4 class="WorkExperienceHead">Work Experience:</h4>
+    <div class="table-box">
+      <table cellpadding="10">
+        <thead>
+        <tr>
+          <th>Icon</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Title</th>
+          <th>Duretion</th>
+          <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png"
+                   class="TableIcon1"></td>
+          <td>Apple</td>
+          <td>America</td>
+          <td>student-work</td>
+          <td>2015-2016</td>
+          <td>good</td>
+        </tr>
+        <tr>
+          <td><img src="https://pics.freeicons.io/uploads/icons/png/37468251556105321-512.png"
+                   class="TableIcon2"></td>
+          <td>google</td>
+          <td>israel</td>
+          <td>head-team</td>
+          <td>2020-2025</td>
+          <td>excellent</td>
+        </tr>
+        <tr>
+          <td><img src="https://yt3.ggpht.com/ytc/AAUvwnjZ8BEyiEl5JopjNn5H4pYESrPmJvYBiiq09LLp=s900-c-k-c0x00ffffff-no-rj"
+                   class="TableIcon3"></td>
+          <td>square-enix</td>
+          <td>japan</td>
+          <td>manager</td>
+          <td>2026-current</td>
+          <td>amazing</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="Recommendations">
+  <div id="Recommendations">
+    <h5 class="RecHead">Recommendations:</h5>
+    <div class="first">
+
+      <div class="card">
+        <img src="https://www.dccomics.com/sites/default/files/styles/whos_who/public/Char_WhosWho_Superman_20190116_5c3fc71f524f38.28405711.jpg?itok=U9inHc9Q"
+             class="RecIcon">
+        <h1>Superman</h1>
+        <p class="title">super strength, flying</p>
+        <p>krypton</p>
+        <div>
+          <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <div class="second">
+
+      <div class="card">
+        <img src="https://cdn.europosters.eu/image/750/canvas-print-the-flash-i47257.jpg"
+             class="RecIcon">
+        <h1>Flash</h1>
+        <p class="title">super speed, time travle</p>
+        <p>earth</p>
+        <div>
+          <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div>
+  <footer class ="text-center text-white">
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://github.com/Darxtero">my Github</a>
+      <a href="https://www.linkedin.com/in/jonathan-flesler-32785b200/"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/jonathan.flesler"><i class="fa fa-facebook"></i></a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script src="IndexJS.js"></script>
+</body>
+</html>
